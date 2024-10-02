@@ -1,13 +1,11 @@
 {
-  "dependencies": {
-    "prompt-sync": "^4.2.0"
-  }
+  "name": "site_fatec",
+  "version": "1.0.0",
+  "description": "Site da Fatec Sorocaba",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Márcio Torres",
+  "license": "ISC"
 }
-
-echo "# pwebnode" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/marciotr/pwebnode.git
-git push -u origin main

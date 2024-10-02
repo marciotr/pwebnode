@@ -1,4 +1,6 @@
 var express = require('express')
+var texto = require('/modulo1.js')
+
 var app = express()
 
 app.set('view engine','ejs');
@@ -24,6 +26,6 @@ app.get('/informacao/professores', function(req,res){
     res.render("informacao/professores")
 });
 
-app.get(3000, function(){
-    res.sand("Servidor express foi carregado!")
+app.listen(3000, function(){
+    
 });
