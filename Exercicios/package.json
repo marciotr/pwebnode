@@ -8,5 +8,13 @@
     "start": "nodemon app.js"
   },
   "author": "Márcio Torres",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "mssql": "^11.0.1",
+    "nodemon": "^3.1.7",
+    "prompt-sync": "^4.2.0"
+  }
 }

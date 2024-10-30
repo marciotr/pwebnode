@@ -1,28 +1,26 @@
-var app = require('./app/config/server')
+var app = require('./app/config/server');
 
-app.set('view engine','ejs');
+var rotaHome = require('./app/routes/home'); // só está definindo
+rotaHome(app); // está executando
 
-app.get('/', function(req,res){
-    res.send("<html><body>Home da Fatec Sorocaba!</body></html>")
-});
-app.get('/historia', function(req,res){
-    res.send("<html><body>Historia da Fatec Sorocaba</body></html>")
-});
-app.get('/cursos', function(req,res){
-    res.send("<html><body>Cursos da Fatec Sorocaba</body></html>")
-});
-app.get('/professores', function(req,res){
-    res.send("<html><body>Professores da Fatec Sorocaba</body></html>")
-});
+// var rotaAdicionarUsuario = require('./app/routes/adicionar_usuario');
+// rotaAdicionarUsuario(app);
 
-app.get('/informacao/cursos', function(req,res){
-    res.render("informacao/cursos")
-});
+// var rotaHistoria = require('./app/routes/historia'); 
+// rotaHistoria(app); 
 
-app.get('/informacao/professores', function(req,res){
-    res.render("informacao/professores")
-});
+// var rotaCursos = require('./app/routes/cursos'); 
+// rotaCursos(app); // está executando
+
+// var rotaProfessores = require('./app/routes/professores'); // só está definindo
+// rotaProfessores(app); // está executando
+
+/* poderia executar assim também*/
+/*
+var rotaAdicionarUsuario = require('./app/routes/adicionar_usuario')(app);
+
+*/
 
 app.listen(3000, function(){
-    console.log("servidor iniciado")
+	console.log("servidor iniciado");
 });
